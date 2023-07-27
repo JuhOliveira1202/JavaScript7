@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> F.7 - Exercício 3</title>
+</head>
+
+<body>
+	<h3> F.7 - Exercício 3 </h3>
+<script>
+	var num1;
+	var num2;
+	var resultado;
+	var operacao;
+	
+	num1=parseFloat(prompt("Insere o 1º número :" , ""));
+	num2=parseFloat(prompt("Insere o 2º número :" , ""));
+	operacao=parseInt(prompt("1- soma / 2- substração / 3- multiplicação / 4- divisão" , ""));
+	
+	document.write("1º número: " + num1 + "</br>");
+	document.write("2º número: " + num2 + "</br>");
+	
+	switch (operacao)
+		{
+			case 1:
+				resultado= num1+num2;
+				document.write("A soma é " + resultado);
+				break;
+				
+			case 2:
+				resultado= num1-num2;
+				document.write("A subtração é " + resultado);
+				break;
+				
+			case 3:
+				resultado= num1*num2;
+				document.write("A multiplicação é " + resultado);
+				break;
+				
+			case 4:
+				resultado= num1/num2;
+				document.write("A divisão é " + resultado);
+				break;
+				
+			default:
+				document.write("Não escolheu operação válida. </br>");
+		}
+</script>
+</body>
+</html>

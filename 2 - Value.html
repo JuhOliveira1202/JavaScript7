@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> F.7 - Exercício 2 </title>
+</head>
+
+<body>
+	<h3> F.7 - Exercício 2 </h3>
+<script>
+	var num=0;
+	num=parseFloat(prompt("Qual a classificação ? (0 a 20)",""));
+	document.write("<p> <u> Valor inserido </u>: " + num + "</p>");
+	document.write("<u> Classificação </u> : ");
+	switch (true)
+		{
+			case (num>=1 && num<10):
+				document.write("Insuficiente. </br>");
+				break;
+			case (num>10 && num<14):
+				document.write("Suficiente </br>");
+				break;
+			case (num>=18 && num<=20):
+				document.write("Excelente. </br>");
+				break;
+			default:
+				document.write("Inválido. Não está entre 0 e 20. </br>");
+		}
+</script>
+</body>
+</html>
